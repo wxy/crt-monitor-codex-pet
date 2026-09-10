@@ -1,0 +1,27 @@
+{
+  "slug": "crt-monitor--your-handle",
+  "pet_slug": "crt-monitor",
+  "author_slug": "your-handle",
+  "name": "CRT Monitor",
+  "localized_names": {
+    "en": "CRT Monitor",
+    "zh": "CRT 显示器"
+  },
+  "author": "YOUR_GITHUB_HANDLE",
+  "primary_category": "Robots",
+  "canonical_key": "original/crt-monitor",
+  "tags": [
+    "robot",
+    "retro-computing",
+    "crt",
+    "coding"
+  ],
+  "source_type": "original",
+  "source_url": "https://github.com/YOUR_GITHUB_HANDLE/crt-monitor-codex-pet",
+  "license": "CC BY 4.0",
+  "preview_image": "../../assets/previews/crt-monitor--your-handle/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}
