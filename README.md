@@ -2,7 +2,7 @@
 
 A tiny retro monitor that keeps an eye on your code.
 
-![CRT Monitor preview](assets/preview.png)
+![CRT Monitor design](assets/source-design.png)
 
 **Codex Pet v2 · 88 animation frames · transparent WebP · macOS / Windows / Linux · original character**
 
@@ -42,46 +42,6 @@ Restart Codex, then select **CRT Monitor** under **Settings → Appearance → P
 | Standard animation rows | 9 |
 | Look-direction rows | 2 |
 | Transparency | RGBA / transparent WebP |
-
-The approved design source used a 9-column working layout. The runtime atlas intentionally uses the labeled first 8 frames for each row and maps them into Codex's required 8-column atlas without per-frame auto-scaling.
-
-## Validation
-
-```bash
-python3 scripts/validate.py
-```
-
-Validation checks atlas dimensions, frame grid, runtime manifest, transparency, and basic edge safety.
-
-## Community submission
-
-The Awesome Codex Pet community expects the submission folder to be named:
-
-```text
-pets/<pet-slug>--<author-slug>/
-```
-
-and to contain only:
-
-```text
-submission.json
-pet.json
-spritesheet.webp
-```
-
-Prepare a ready-to-copy submission directory using your GitHub handle:
-
-```bash
-python3 scripts/prepare-community-submission.py YOUR_GITHUB_HANDLE
-```
-
-The generated files will appear in:
-
-```text
-community/generated/crt-monitor--YOUR_GITHUB_HANDLE/
-```
-
-Before opening a PR, review `submission.json`, especially the author and source URL.
 
 ## Contributing
 
