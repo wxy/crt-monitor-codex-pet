@@ -9,12 +9,12 @@ parser.add_argument("handle", help="GitHub handle / author slug")
 parser.add_argument("--author", help="Display author name; defaults to handle")
 args = parser.parse_args()
 
-handle = args.handle.strip().lower()
-handle = re.sub(r"[^a-z0-9-]+", "-", handle).strip("-")
+raw_handle = args.handle.strip()
+handle = re.sub(r"[^a-z0-9-]+", "-", raw_handle.lower()).strip("-")
 if not handle:
     raise SystemExit("Invalid handle")
 
-author = args.author or args.handle
+author = args.author or raw_handle
 slug = f"crt-monitor--{handle}"
 dest = ROOT / "community" / "generated" / slug
 
@@ -44,10 +44,10 @@ submission = {
     },
     "author": author,
     "primary_category": "Robots",
-    "canonical_key": "original/crt-monitor",
+    "canonical_key": f"original/{handle}/crt-monitor",
     "tags": ["robot", "retro-computing", "crt", "coding"],
     "source_type": "original",
-    "source_url": f"https://github.com/{args.handle}/crt-monitor-codex-pet",
+    "source_url": f"https://github.com/{raw_handle}/crt-monitor-codex-pet",
     "license": "CC BY 4.0",
     "preview_image": f"../../assets/previews/{slug}/gifs/idle.gif",
     "codex_install": {
@@ -60,4 +60,4 @@ submission = {
 )
 
 print(dest)
-print("Review submission.json before opening a PR.")
+print("Ready for the Awesome Codex Pet submission folder.")
