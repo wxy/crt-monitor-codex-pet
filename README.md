@@ -1,12 +1,20 @@
-# CRT Monitor — Codex Pet
+<div align="center">
 
-A tiny retro monitor that keeps an eye on your code.
+# CRT Monitor
+
+### A tiny retro monitor that keeps an eye on your code.
+
+[简体中文](README.zh-CN.md) · English
 
 ![CRT Monitor design](assets/source-design.png)
 
-**Codex Pet v2 · 88 animation frames · transparent WebP · macOS / Windows / Linux · original character**
+**Codex Pet v2** · **88 frames** · **Transparent WebP** · **macOS / Windows / Linux**
 
-CRT Monitor is an original chibi CRT desktop companion designed for Codex. Its screen changes with runtime state: terminal activity while working, question/exclamation marks while waiting, error diagnostics on failure, code lines during review, and directional poses in the v2 look rows.
+</div>
+
+CRT Monitor is an original chibi CRT desktop companion for Codex. Its warm beige shell, dark green glass, glowing pixel expressions, and tiny rounded feet turn coding states into a small retro-computing character on your desktop.
+
+While Codex works, waits, reviews, or hits an error, CRT Monitor responds with terminal activity, status symbols, diagnostics, code lines, and directional expressions.
 
 ## Install
 
@@ -16,43 +24,44 @@ CRT Monitor is an original chibi CRT desktop companion designed for Codex. Its s
 ./scripts/install.sh
 ```
 
-Or manually copy the runtime files:
-
-```bash
-mkdir -p ~/.codex/pets/crt-monitor
-cp pet/pet.json pet/spritesheet.webp ~/.codex/pets/crt-monitor/
-```
-
-Restart Codex, then select **CRT Monitor** under **Settings → Appearance → Pets**.
-
 ### Windows PowerShell
 
 ```powershell
 ./scripts/install.ps1
 ```
 
-## Sprite contract
+Or install manually:
 
-| Property | Value |
+```bash
+mkdir -p ~/.codex/pets/crt-monitor
+cp pet/pet.json pet/spritesheet.webp ~/.codex/pets/crt-monitor/
+```
+
+Restart Codex, then choose **CRT Monitor** in **Settings → Appearance → Pets**.
+
+## Pet format
+
+| | |
 | --- | --- |
-| Version | Codex Pet v2 |
+| Runtime | Codex Pet v2 |
 | Atlas | `1536 × 2288` WebP |
 | Grid | `8 × 11` |
-| Cell size | `192 × 208` |
-| Standard animation rows | 9 |
-| Look-direction rows | 2 |
-| Transparency | RGBA / transparent WebP |
+| Frame | `192 × 208` |
+| Animations | 9 standard states + 16 look directions |
+| Background | Transparent |
 
 ## Contributing
 
-Contributions are welcome: animation refinement, alternate screen expressions, accessibility improvements, documentation, installer fixes, and compatible visual variants.
+Contributions that improve animation continuity, screen expressions, accessibility, documentation, installers, or compatible visual variants are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Please keep the original CRT silhouette and state meanings recognizable when contributing to the main pet. Larger visual reinterpretations are better proposed as separate variants.
+## License
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Code and scripts are licensed under the [MIT License](LICENSE).
 
-## Licensing
+The CRT Monitor character design and artwork are licensed under [CC BY 4.0](LICENSE-ARTWORK).
 
-Code and scripts: **MIT** — see [LICENSE](LICENSE).
+---
 
-Character design and artwork: **CC BY 4.0** — see [LICENSE-ARTWORK](LICENSE-ARTWORK).
+<div align="center">
+<sub>CRT Monitor is an independent community pet project and is not affiliated with or endorsed by OpenAI.</sub>
+</div>
