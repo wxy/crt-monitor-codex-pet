@@ -50,6 +50,8 @@ cp pet/pet.json pet/spritesheet.webp ~/.codex/pets/crt-monitor/
 | 动画 | 9 个标准状态 + 16 个观察方向 |
 | 背景 | 透明 |
 
+原生分辨率的 [8×11 Contact sheet](assets/preview-grid.png) 直接从运行时 atlas 生成、未经缩放。[逐帧审计](assets/frame-audit.md) 记录了全部 88 个解码单元格和 8 列的哈希。
+
 ## 参与贡献
 
 欢迎改进动画连续性、屏幕表情、无障碍表现、文档、安装脚本以及兼容的视觉变体。详细说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。

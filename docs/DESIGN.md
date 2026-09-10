@@ -29,7 +29,7 @@ CRT Monitor is an original chibi retro computer monitor with:
 
 ## Production constraints
 
-The approved working design used 9 visual cells per row. The runtime atlas uses the labeled first 8 cells only.
+The source board and runtime atlas both present the final 8×11 frame set. The contact sheet is generated from the runtime atlas at native resolution, with no scaling or interpolation. Per-frame and per-column decoded-pixel hashes are recorded in [`assets/frame-audit.md`](../assets/frame-audit.md).
 
 Important invariants:
 

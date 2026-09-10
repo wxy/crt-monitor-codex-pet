@@ -50,6 +50,8 @@ Restart Codex, then choose **CRT Monitor** in **Settings → Appearance → Pets
 | Animations | 9 standard states + 16 look directions |
 | Background | Transparent |
 
+The native-resolution [8×11 contact sheet](assets/preview-grid.png) is generated directly from the runtime atlas without scaling. The [frame audit](assets/frame-audit.md) records hashes for all 88 decoded cells and all eight columns.
+
 ## Contributing
 
 Contributions that improve animation continuity, screen expressions, accessibility, documentation, installers, or compatible visual variants are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
